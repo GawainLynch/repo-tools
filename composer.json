@@ -1,0 +1,35 @@
+{
+    "name": "bolt/repo-tools",
+    "description": "Tools for managing git & Composer repositories",
+    "type": "project",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gawain Lynch",
+            "email": "gawain.lynch@gmail.com"
+        }
+    ],
+    "require": {
+        "albertofem/rsync-lib": "1.0.x@dev",
+        "composer/composer": "^1.4",
+        "nesbot/carbon": "^1.22",
+        "symfony/process": "^3.3"
+    },
+    "require-dev": {
+        "mikey179/vfsStream": "^1.6",
+        "phpunit/phpunit": "^6.2",
+        "symfony/filesystem": "^3.3",
+        "symfony/phpunit-bridge": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bolt\\RepoTools\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bolt\\RepoTools\\Tests\\": "tests"
+        }
+    }
+}
